@@ -15,6 +15,8 @@
   navigate to:https://kanban-board-7f99.onrender.com
   Sign in using JollyGuru as the username and password as the password.
 
+  ![alt text](<Assets/KanBan board.png>)
+
   ## Usage
   N/A
 
