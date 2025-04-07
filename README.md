@@ -12,7 +12,8 @@
   * [Questions](#questions)
 
   ## Installation
-  navigate to: Sign in using JollyGuru as the username and password as the password.
+  navigate to:https://kanban-board-7f99.onrender.com
+  Sign in using JollyGuru as the username and password as the password.
 
   ## Usage
   N/A
