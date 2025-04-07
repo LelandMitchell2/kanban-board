@@ -4,8 +4,9 @@
   font-family: 'Inter Tight', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color-scheme: dark;
+  color: #ffffff;
+  background-color: #000000;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -24,18 +25,16 @@ input:-moz-placeholder {
 
 a {
   font-weight: 500;
-  color: #000000;
+  color: #ffffff;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #32CD32;
 }
 
 body {
-  background: #ECF0F1;
-  background-size: cover;
-  background-repeat: no-repeat no-repeat;
-  background-position: center center;
+  background: #000000;
+  color: #ffffff;
   margin: 0;
   place-items: center;
   min-width: 320px;
@@ -45,21 +44,24 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #228B22;
 }
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 1px solid #228B22;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #228B22;
+  color: #ffffff;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: background-color 0.25s, border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  background-color: #32CD32;
+  border-color: #32CD32;
 }
 button:focus,
 button:focus-visible {
@@ -67,7 +69,7 @@ button:focus-visible {
 }
 
 main {
-  color: black;
+  color: white;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -76,18 +78,19 @@ main {
 
 tr {
   border-radius: 10px;
-  background-color: #000;
+  background-color: #228B22;
   color: white;
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #333333;
+  background-color: #006400;
 }
 
 /* Navbar Content */
 .nav {
   display: flex;
   padding: 1em 2em;
+  background-color: #00680079;
 }
 
 .nav ul {
@@ -105,7 +108,7 @@ tbody tr:nth-child(odd) {
 }
 
 .nav-title a {
-  color: #b864c4;
+  color: #ffffff;
 }
 
 .nav-item {
@@ -115,8 +118,7 @@ tbody tr:nth-child(odd) {
 }
 
 .nav-link {
-  color: #fff;
-  text-decoration: none;
+  color: #ffffff;
 }
 
 .active {
@@ -147,25 +149,26 @@ tbody tr:nth-child(odd) {
 }
 
 .todo {
-  background-color: #e9cbec;
+  background: linear-gradient(to bottom, #a8e6a3, #6fcf6b);
 }
 
 .inprogress {
-  background-color: #b864c4;
+  background: linear-gradient(to bottom, #6fcf6b, #4caf50);
 }
 
 .done {
-  background-color: #732381;
+  background: linear-gradient(to bottom, #4caf50, #2e7d32);
 }
 
 .ticket-card {
   text-align: left;
-  background-color: #fff;
+  background-color: #006400;
+  color: white;
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  border: 0.1em solid black;
+  border: 0.1em solid #228B22;
 }
 
 .container {
@@ -181,23 +184,26 @@ tbody tr:nth-child(odd) {
 
 
 .form {
-  width: 60%;
+  width: 100%;
   height: 80%;
-  background-color: #b864c4;
+  background-color: #006400;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .form > h1, .form > label {
-  color: yellow;
+  color: #ffffff;
 }
 
-.form > input {
-  width: 200px;
-  
+.form > input, .form textarea {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #228B22;
+  padding: 5px;
 }
 
 .form > label {
@@ -207,16 +213,19 @@ tbody tr:nth-child(odd) {
 
 .form button {
   margin-top: 2.5%;
+  background-color: #228B22;
+  color: white;
+  border: none;
 }
 
-.form textarea {
+/* .form textarea {
   resize: both;
   min-height: 30px;
   min-width: 30px;
-}
+} */
 
 .editBtn {
-  background-color: #f9f9f9;
+  background-color: #004b06;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -225,14 +234,14 @@ tbody tr:nth-child(odd) {
 }
 
 .deleteBtn {
-  background-color: #f9f9f9;
+  background-color: #ff2020;
   font-weight: 500;
-  color: black;
+  color: white;
   text-decoration: inherit;
 }
 
 .deleteBtn:hover {
-  color: #535bf2;
+  color: #ffffff;
 }
 
 .login-notice {
